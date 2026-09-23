@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1600">
+  <rect width="1200" height="1600" fill="#f4efe5"/>
+  <g stroke="#191512" stroke-opacity=".06" stroke-width="1">
+    <path d="M171 0V1600M342 0V1600M514 0V1600M685 0V1600M857 0V1600M1028 0V1600"/>
+    <path d="M0 400H1200M0 800H1200M0 1200H1200"/>
+  </g>
+  <rect x="28" y="28" width="1144" height="1544" fill="none" stroke="#191512" stroke-opacity=".16"/>
+  <!-- 云端 / 服务器 -->
+  <g>
+    <rect x="360" y="200" width="480" height="120" rx="16" fill="#ffffff" fill-opacity=".6" stroke="#191512" stroke-opacity=".55" stroke-width="3"/>
+    <circle cx="410" cy="260" r="10" fill="#e04a17"/>
+    <g stroke="#191512" stroke-opacity=".3" stroke-width="6" stroke-linecap="round">
+      <path d="M460 260h300M460 260h210" stroke-opacity=".18"/>
+    </g>
+  </g>
+  <!-- 传输中的文件 -->
+  <g fill="#ffffff" fill-opacity=".7" stroke="#191512" stroke-opacity=".5" stroke-width="3">
+    <path d="M420 470h130v96l-30 30H420z"/>
+    <path d="M640 560h130v96l-30 30H640z"/>
+    <path d="M460 680h130v96l-30 30H460z"/>
+  </g>
+  <g fill="#e04a17" fill-opacity=".85">
+    <rect x="444" y="494" width="82" height="10" rx="5"/>
+    <rect x="664" y="584" width="82" height="10" rx="5"/>
+    <rect x="484" y="704" width="82" height="10" rx="5"/>
+  </g>
+  <!-- 传输虚线 -->
+  <g stroke="#e04a17" stroke-width="4" stroke-dasharray="2 14" stroke-linecap="round">
+    <path d="M600 420v300M600 820v180"/>
+  </g>
+  <path d="M600 1050l-22-40h44z" fill="#e04a17"/>
+  <!-- 客户端电脑 -->
+  <g>
+    <rect x="330" y="1100" width="540" height="330" rx="18" fill="#ffffff" fill-opacity=".6" stroke="#191512" stroke-opacity=".55" stroke-width="3"/>
+    <rect x="370" y="1140" width="460" height="250" rx="8" fill="#f4efe5" stroke="#191512" stroke-opacity=".3" stroke-width="2"/>
+    <g stroke="#191512" stroke-opacity=".28" stroke-width="8" stroke-linecap="round">
+      <path d="M400 1190h180M400 1226h300M400 1262h240"/>
+    </g>
+    <path d="M400 1310h140" stroke="#e04a17" stroke-width="8" stroke-linecap="round"/>
+  </g>
+  <text x="120" y="1500" font-family="Georgia, 'Times New Roman', serif" font-size="24" letter-spacing="6" fill="#575046">ZERO-RESIDUE FTP SERVER</text>
+  <text x="700" y="1520" font-family="Georgia, 'Times New Roman', serif" font-weight="700" font-size="340" fill="none" stroke="#191512" stroke-opacity=".2" stroke-width="3">03</text>
+</svg>

@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900">
+  <rect width="1600" height="900" fill="#f4efe5"/>
+  <g stroke="#191512" stroke-opacity=".06" stroke-width="1">
+    <path d="M200 0V900M400 0V900M600 0V900M800 0V900M1000 0V900M1200 0V900M1400 0V900"/>
+    <path d="M0 225H1600M0 450H1600M0 675H1600"/>
+  </g>
+  <rect x="28" y="28" width="1544" height="844" fill="none" stroke="#191512" stroke-opacity=".16"/>
+  <!-- 液态背景光斑 -->
+  <circle cx="1150" cy="300" r="230" fill="#e04a17" fill-opacity=".16"/>
+  <circle cx="420" cy="640" r="170" fill="#e04a17" fill-opacity=".1"/>
+  <!-- 液态玻璃面板（背层） -->
+  <g>
+    <rect x="330" y="270" width="520" height="380" rx="28" fill="#ffffff" fill-opacity=".4" stroke="#191512" stroke-opacity=".3" stroke-width="2"/>
+    <rect x="430" y="330" width="520" height="380" rx="28" fill="#ffffff" fill-opacity=".55" stroke="#191512" stroke-opacity=".45" stroke-width="2.5"/>
+  </g>
+  <!-- 面板内显存条形图 -->
+  <g>
+    <rect x="480" y="560" width="54" height="100" rx="10" fill="#191512" fill-opacity=".22"/>
+    <rect x="556" y="500" width="54" height="160" rx="10" fill="#191512" fill-opacity=".32"/>
+    <rect x="632" y="440" width="54" height="220" rx="10" fill="#e04a17" fill-opacity=".85"/>
+    <rect x="708" y="382" width="54" height="278" rx="10" fill="#191512" fill-opacity=".55"/>
+    <path d="M480 350h270" stroke="#191512" stroke-opacity=".3" stroke-width="8" stroke-linecap="round"/>
+    <path d="M480 350h180" stroke="#e04a17" stroke-width="8" stroke-linecap="round"/>
+  </g>
+  <!-- 扫光 -->
+  <path d="M600 330L880 330 700 710 560 710z" fill="#ffffff" fill-opacity=".28"/>
+  <!-- 标签 -->
+  <g font-family="Georgia, 'Times New Roman', serif" font-size="24" letter-spacing="5" fill="#575046">
+    <text x="1050" y="560">VRAM ×3 SOURCE</text>
+    <text x="1050" y="606">GGUF · QUANT FIT</text>
+    <text x="1050" y="652">HF MIRROR</text>
+  </g>
+  <path d="M1020 548h-70" stroke="#e04a17" stroke-width="3" stroke-dasharray="2 10" stroke-linecap="round"/>
+  <text x="1210" y="810" font-family="Georgia, 'Times New Roman', serif" font-weight="700" font-size="300" fill="none" stroke="#191512" stroke-opacity=".2" stroke-width="3">04</text>
+</svg>

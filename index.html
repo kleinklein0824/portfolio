@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Klein · 个人作品集 — AI 辅助开发 / 桌面工具</title>
+  <meta name="description" content="Klein 的个人作品集：AI 辅助开发、桌面工具与网络工程方向的精选项目展示。">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%23e04a17'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="css/style.css?v=20260916-3">
+</head>
+<body id="top">
+
+  <!-- ===================== 顶部导航 ===================== -->
+  <nav class="nav" id="nav">
+    <div class="nav-inner container">
+      <a class="nav-logo" href="#top"><span class="js-name">Klein</span><span class="nav-logo-mark">®</span></a>
+      <button class="nav-burger" id="nav-burger" aria-label="打开菜单" aria-expanded="false" aria-controls="nav-links">
+        <span></span><span></span>
+      </button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#works"><sup>01</sup>作品</a></li>
+        <li><a href="#about"><sup>02</sup>关于</a></li>
+        <li><a href="#contact"><sup>03</sup>联系</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ===================== 首屏 · 封面 ===================== -->
+  <header class="hero">
+    <div class="container">
+      <div class="hero-meta">
+        <span>个人作品集 · Portfolio</span>
+        <span>Vol.01 — <span id="profile-year">2026</span></span>
+      </div>
+    </div>
+
+    <div class="hero-main container">
+      <span class="hero-block" aria-hidden="true"></span>
+      <p class="hero-kicker reveal">你好，我是</p>
+      <h1 class="hero-title reveal">
+        <span class="js-name">Klein</span><span class="hero-dot">。</span>
+        <span class="hero-title-en">AI-Assisted Development</span>
+      </h1>
+      <div class="hero-sub reveal">
+        <p class="hero-role" id="profile-role">物联网工程 · AI 辅助开发 / 桌面工具与网络工程</p>
+        <p class="hero-tagline" id="profile-tagline">热爱软件工程开发 —— 目前主要关注 AI 辅助开发、大语言模型技术、桌面工具、网络工程与代码版本追溯。</p>
+        <a class="hero-link" href="#works">查看作品 ↓</a>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="hero-foot">
+        <span id="profile-location">中国·广州</span>
+        <span class="hero-scroll">向下滚动 · Scroll</span>
+        <span>广州软件学院 · 在读</span>
+      </div>
+    </div>
+
+    <span class="hero-vertical" aria-hidden="true">Software Developer — 软件开发者</span>
+  </header>
+
+  <main>
+    <!-- ===================== 精选作品 ===================== -->
+    <section class="section" id="works">
+      <header class="section-head container">
+        <span class="section-label reveal">01 — Selected Works</span>
+        <h2 class="section-title reveal">精选作品</h2>
+        <p class="section-note reveal">共 <span id="work-count">7</span> 件 · 持续更新</p>
+      </header>
+      <div class="works-list container" id="works-list">
+        <noscript><p class="noscript-tip">项目列表需要启用 JavaScript 后显示。</p></noscript>
+      </div>
+    </section>
+
+    <!-- ===================== 关于我 ===================== -->
+    <section class="section" id="about">
+      <header class="section-head container">
+        <span class="section-label reveal">02 — About</span>
+        <h2 class="section-title reveal">关于我</h2>
+      </header>
+
+      <div class="about-grid container">
+        <blockquote class="about-quote reveal">“每一次修改，<em>都可追溯</em>。”</blockquote>
+        <div class="about-text reveal">
+          <p>我是<span class="js-name">Klein</span>，物联网工程专业学生，热爱软件工程开发，主要关注 AI 辅助开发、大语言模型技术、桌面工具、网络工程与代码版本追溯，平时使用 Python、Java、TypeScript、Dart/Flutter 和 Node.js 进行项目开发。</p>
+          <p>我完成了代码修改历史管理器、DNS 网络控制台、FTP 服务器、GPU 检测面板、打包工具、AI API 价格对比与校园二手交易平台等 7 个项目，覆盖桌面工具、网络工程、AI 应用与 Web 开发方向，目前仍在持续学习前后端开发、数据可视化、桌面端打包、MCP 工具集成与 AI 应用构建。</p>
+          <p class="about-facts">中国·广州 · 物联网工程 · 广州软件学院在读</p>
+        </div>
+      </div>
+
+      <div class="skills container reveal">
+        <h3 class="skills-title">技能方向 · Skill Index</h3>
+        <ul class="skills-list" id="skills-list"></ul>
+      </div>
+    </section>
+
+    <!-- ===================== 联系方式（收尾深色跨页） ===================== -->
+    <section class="contact" id="contact">
+      <div class="contact-inner container">
+        <span class="section-label reveal">03 — Contact</span>
+        <h2 class="contact-title reveal">让我们聊聊<span class="accent">。</span></h2>
+        <a class="contact-mail reveal" id="contact-mail" href="mailto:kleinkleinwu@gmail.com">kleinkleinwu@gmail.com ↗</a>
+        <ul class="contact-links reveal">
+          <li><a id="contact-github" href="https://github.com/kleinklein0824" target="_blank" rel="noopener">GitHub ↗</a></li>
+          <li><a id="contact-homepage" href="https://klein0824.github.io/" target="_blank" rel="noopener">个人主页 ↗</a></li>
+          <li><span>微信：<span id="contact-wechat">klein</span></span></li>
+          <li><a href="mailto:kleinkleinwu@gmail.com">邮件联系 ↗</a></li>
+        </ul>
+      </div>
+      <footer class="footer container">
+        <span>© <span id="year">2026</span> <span class="js-name">Klein</span> · 个人作品集</span>
+        <span>原生 HTML / CSS / JavaScript 构建</span>
+        <a href="#top">回到顶部 ↑</a>
+      </footer>
+    </section>
+  </main>
+
+  <script src="js/data.js?v=20260916-3"></script>
+  <script src="js/main.js?v=20260916-3"></script>
+</body>
+</html>

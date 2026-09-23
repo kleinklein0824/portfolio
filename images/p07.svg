@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900">
+  <rect width="1600" height="900" fill="#f4efe5"/>
+  <g stroke="#191512" stroke-opacity=".06" stroke-width="1">
+    <path d="M200 0V900M400 0V900M600 0V900M800 0V900M1000 0V900M1200 0V900M1400 0V900"/>
+    <path d="M0 225H1600M0 450H1600M0 675H1600"/>
+  </g>
+  <rect x="28" y="28" width="1544" height="844" fill="none" stroke="#191512" stroke-opacity=".16"/>
+  <!-- 遮阳棚 -->
+  <g>
+    <rect x="240" y="200" width="1120" height="90" fill="#e04a17" fill-opacity=".88"/>
+    <g fill="#e04a17" fill-opacity=".88">
+      <path d="M240 290a55 55 0 0 0 110 0z"/>
+      <path d="M350 290a55 55 0 0 0 110 0z"/>
+      <path d="M460 290a55 55 0 0 0 110 0z"/>
+      <path d="M570 290a55 55 0 0 0 110 0z"/>
+      <path d="M680 290a55 55 0 0 0 110 0z"/>
+      <path d="M790 290a55 55 0 0 0 110 0z"/>
+      <path d="M900 290a55 55 0 0 0 110 0z"/>
+      <path d="M1010 290a55 55 0 0 0 110 0z"/>
+      <path d="M1120 290a55 55 0 0 0 110 0z"/>
+      <path d="M1230 290a55 55 0 0 0 110 0z"/>
+    </g>
+    <g fill="#f4efe5">
+      <path d="M295 290a55 55 0 0 0 110 0z" transform="translate(-55 0)"/>
+      <path d="M515 290a55 55 0 0 0 110 0z" transform="translate(-55 0)"/>
+      <path d="M735 290a55 55 0 0 0 110 0z" transform="translate(-55 0)"/>
+      <path d="M955 290a55 55 0 0 0 110 0z" transform="translate(-55 0)"/>
+      <path d="M1175 290a55 55 0 0 0 110 0z" transform="translate(-55 0)"/>
+    </g>
+    <rect x="240" y="188" width="1120" height="18" fill="#191512" fill-opacity=".7"/>
+  </g>
+  <!-- 摊台 -->
+  <rect x="330" y="560" width="940" height="26" fill="#191512" fill-opacity=".65"/>
+  <g>
+    <rect x="400" y="586" width="24" height="230" fill="#191512" fill-opacity=".4"/>
+    <rect x="1176" y="586" width="24" height="230" fill="#191512" fill-opacity=".4"/>
+  </g>
+  <!-- 摊位上的二手书堆 -->
+  <g stroke="#191512" stroke-opacity=".5" stroke-width="3">
+    <rect x="470" y="470" width="200" height="42" rx="6" fill="#ffffff" fill-opacity=".75"/>
+    <rect x="490" y="428" width="180" height="42" rx="6" fill="#ffffff" fill-opacity=".6"/>
+    <rect x="505" y="386" width="150" height="42" rx="6" fill="#ffffff" fill-opacity=".8"/>
+    <rect x="760" y="484" width="46" height="76" rx="6" fill="#e04a17" fill-opacity=".85"/>
+    <rect x="812" y="472" width="46" height="88" rx="6" fill="#ffffff" fill-opacity=".7"/>
+    <rect x="864" y="492" width="46" height="68" rx="6" fill="#191512" fill-opacity=".35"/>
+    <rect x="990" y="500" width="120" height="60" rx="8" fill="#ffffff" fill-opacity=".65"/>
+    <circle cx="1180" cy="520" r="40" fill="#e04a17" fill-opacity=".25"/>
+    <rect x="1150" y="548" width="70" height="12" rx="6" fill="#191512" fill-opacity=".3"/>
+  </g>
+  <!-- 站内私信气泡 -->
+  <g>
+    <path d="M1240 420h130a20 20 0 0 1 20 20v70a20 20 0 0 1-20 20h-84l-32 30v-30h-14a20 20 0 0 1-20-20v-70a20 20 0 0 1 20-20z" fill="#ffffff" fill-opacity=".7" stroke="#191512" stroke-opacity=".45" stroke-width="3"/>
+    <circle cx="1288" cy="475" r="8" fill="#e04a17"/>
+    <circle cx="1320" cy="475" r="8" fill="#191512" fill-opacity=".35"/>
+    <circle cx="1352" cy="475" r="8" fill="#191512" fill-opacity=".35"/>
+  </g>
+  <text x="240" y="760" font-family="Georgia, 'Times New Roman', serif" font-size="26" letter-spacing="6" fill="#575046">CAMPUS SECOND-HAND MARKET · 300+ USERS</text>
+  <text x="1210" y="810" font-family="Georgia, 'Times New Roman', serif" font-weight="700" font-size="300" fill="none" stroke="#191512" stroke-opacity=".2" stroke-width="3">07</text>
+</svg>

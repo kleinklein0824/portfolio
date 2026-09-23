@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1200">
+  <rect width="1600" height="1200" fill="#f4efe5"/>
+  <g stroke="#191512" stroke-opacity=".06" stroke-width="1">
+    <path d="M200 0V1200M400 0V1200M600 0V1200M800 0V1200M1000 0V1200M1200 0V1200M1400 0V1200"/>
+    <path d="M0 300H1600M0 600H1600M0 900H1600"/>
+  </g>
+  <rect x="28" y="28" width="1544" height="1144" fill="none" stroke="#191512" stroke-opacity=".16"/>
+  <!-- 脚本纸 -->
+  <g>
+    <path d="M540 200h360l110 110v290H540z" fill="#ffffff" fill-opacity=".7" stroke="#191512" stroke-opacity=".55" stroke-width="3"/>
+    <path d="M900 200v110h110" fill="none" stroke="#191512" stroke-opacity=".55" stroke-width="3"/>
+    <g stroke="#191512" stroke-opacity=".28" stroke-width="8" stroke-linecap="round">
+      <path d="M590 280h220M590 330h280M590 380h180"/>
+    </g>
+    <path d="M590 430h140" stroke="#e04a17" stroke-width="8" stroke-linecap="round"/>
+  </g>
+  <!-- 齿轮 -->
+  <g transform="translate(1050,430)">
+    <g fill="#e04a17" fill-opacity=".9">
+      <rect x="-14" y="-86" width="28" height="44" rx="8"/>
+      <rect x="-14" y="42" width="28" height="44" rx="8"/>
+      <rect x="-86" y="-14" width="44" height="28" rx="8"/>
+      <rect x="42" y="-14" width="44" height="28" rx="8"/>
+      <rect x="-70" y="-70" width="30" height="30" rx="8" transform="rotate(45)"/>
+      <rect x="40" y="-70" width="30" height="30" rx="8" transform="rotate(45)"/>
+      <rect x="-70" y="40" width="30" height="30" rx="8" transform="rotate(45)"/>
+      <rect x="40" y="40" width="30" height="30" rx="8" transform="rotate(45)"/>
+    </g>
+    <circle r="62" fill="#e04a17" fill-opacity=".9"/>
+    <circle r="26" fill="#f4efe5"/>
+  </g>
+  <!-- 打包箱 -->
+  <g>
+    <path d="M480 760l320-60 320 60v300l-320 80-320-80z" fill="#ffffff" fill-opacity=".65" stroke="#191512" stroke-opacity=".55" stroke-width="3"/>
+    <path d="M480 760l320 70 320-70M800 830v310" fill="none" stroke="#191512" stroke-opacity=".45" stroke-width="3"/>
+    <path d="M540 820l180 40M1060 820l-180 40" stroke="#e04a17" stroke-width="5" stroke-linecap="round"/>
+  </g>
+  <!-- 下降箭头 -->
+  <g stroke="#191512" stroke-opacity=".4" stroke-width="4" stroke-dasharray="2 14" stroke-linecap="round">
+    <path d="M720 640v80"/>
+  </g>
+  <path d="M720 750l-18-34h36z" fill="#191512" fill-opacity=".55"/>
+  <text x="1210" y="1105" font-family="Georgia, 'Times New Roman', serif" font-weight="700" font-size="340" fill="none" stroke="#191512" stroke-opacity=".2" stroke-width="3">05</text>
+</svg>
