@@ -11,6 +11,31 @@
     if (el) el.textContent = value;
   };
 
+  /* ---------- 主题：读取 localStorage 初始化 + 切换 ---------- */
+  var THEME_KEY = 'theme';
+  var themeToggle = document.getElementById('theme-toggle');
+
+  var applyTheme = function (theme) {
+    var dark = theme === 'dark';
+    document.documentElement.setAttribute('data-theme', dark ? 'dark' : 'light');
+    if (themeToggle) {
+      themeToggle.setAttribute('aria-pressed', String(dark));
+      themeToggle.setAttribute('aria-label', dark ? '切换到浅色主题' : '切换到深色主题');
+    }
+  };
+
+  var savedTheme = null;
+  try { savedTheme = localStorage.getItem(THEME_KEY); } catch (e) { /* 隐私模式下忽略 */ }
+  applyTheme(savedTheme === 'dark' ? 'dark' : 'light');
+
+  if (themeToggle) {
+    themeToggle.addEventListener('click', function () {
+      var next = document.documentElement.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+      applyTheme(next);
+      try { localStorage.setItem(THEME_KEY, next); } catch (e) { /* 隐私模式下忽略 */ }
+    });
+  }
+
   /* ---------- 个人信息绑定 ---------- */
   document.querySelectorAll('.js-name').forEach(function (el) {
     el.textContent = profile.name;

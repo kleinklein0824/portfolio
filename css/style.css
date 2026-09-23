@@ -11,10 +11,31 @@
   --muted: #8f8678;
   --accent: #e04a17;
   --line: rgba(25, 21, 18, .18);
+  --nav-bg: rgba(244, 239, 229, .92);
+  --stroke: rgba(25, 21, 18, .28);
+  --stroke-soft: rgba(25, 21, 18, .1);
+  --contact-bg: #191512;   /* 收尾深色跨页：两种主题下均保持深色 */
+  --contact-fg: #f4efe5;
+  color-scheme: light;
   --serif: Georgia, "Times New Roman", "Songti SC", "STSong", "SimSun", serif;
   --sans: "Helvetica Neue", Helvetica, Arial, "PingFang SC", "Microsoft YaHei", sans-serif;
   --pad: clamp(20px, 5vw, 72px);
   --nav-h: 64px;
+}
+
+/* ---------- 深色主题 ---------- */
+html[data-theme="dark"] {
+  --paper: #171310;
+  --paper-deep: #221c16;
+  --ink: #f4efe5;
+  --ink-soft: #c0b6a6;
+  --muted: #9a9184;
+  --accent: #ff6a35;
+  --line: rgba(244, 239, 229, .18);
+  --nav-bg: rgba(23, 19, 16, .92);
+  --stroke: rgba(244, 239, 229, .28);
+  --stroke-soft: rgba(244, 239, 229, .1);
+  color-scheme: dark;
 }
 
 /* ---------- 基础 ---------- */
@@ -50,7 +71,7 @@ html.js .reveal.is-visible { opacity: 1; transform: none; }
   transition: background .3s, border-color .3s;
 }
 .nav--scrolled {
-  background: rgba(244, 239, 229, .92);
+  background: var(--nav-bg);
   -webkit-backdrop-filter: blur(8px);
   backdrop-filter: blur(8px);
   border-bottom-color: var(--line);
@@ -58,6 +79,21 @@ html.js .reveal.is-visible { opacity: 1; transform: none; }
 .nav-inner { display: flex; align-items: center; justify-content: space-between; height: var(--nav-h); }
 .nav-logo { font-family: var(--serif); font-size: 20px; font-weight: 700; letter-spacing: .04em; }
 .nav-logo-mark { color: var(--accent); font-size: 12px; vertical-align: super; margin-left: 2px; }
+
+.nav-right { display: flex; align-items: center; gap: 10px; }
+
+/* 主题切换按钮：浅色显示月亮（切向深色），深色显示太阳 */
+.theme-toggle {
+  display: flex; align-items: center; justify-content: center;
+  width: 38px; height: 38px; flex: 0 0 auto;
+  background: none; border: 1px solid var(--line); border-radius: 50%;
+  color: var(--ink); cursor: pointer;
+  transition: color .25s, border-color .25s;
+}
+.theme-toggle:hover { color: var(--accent); border-color: var(--accent); }
+.theme-toggle .theme-icon-sun { display: none; }
+html[data-theme="dark"] .theme-toggle .theme-icon-sun { display: block; }
+html[data-theme="dark"] .theme-toggle .theme-icon-moon { display: none; }
 
 .nav-burger {
   display: flex; flex-direction: column; align-items: center; justify-content: center;
@@ -251,10 +287,10 @@ html.js .reveal.is-visible { opacity: 1; transform: none; }
     font-size: clamp(90px, 12vw, 200px);
   }
   @supports (-webkit-text-stroke: 1px #000) {
-    .work-no { color: transparent; -webkit-text-stroke: 1.5px rgba(25, 21, 18, .28); }
+    .work-no { color: transparent; -webkit-text-stroke: 1.5px var(--stroke); }
   }
   @supports not (-webkit-text-stroke: 1px #000) {
-    .work-no { color: rgba(25, 21, 18, .1); }
+    .work-no { color: var(--stroke-soft); }
   }
 
   /* 关于我 */
@@ -305,8 +341,8 @@ html.js .reveal.is-visible { opacity: 1; transform: none; }
 .skill-name { font-family: var(--serif); font-weight: 700; font-size: clamp(20px, 2.4vw, 30px); }
 .skill-detail { grid-column: 2; font-size: 14px; color: var(--ink-soft); letter-spacing: .04em; }
 
-/* ---------- 联系方式（深色收尾跨页） ---------- */
-.contact { background: var(--ink); color: var(--paper); }
+/* ---------- 联系方式（深色收尾跨页，主题切换时保持深色） ---------- */
+.contact { background: var(--contact-bg); color: var(--contact-fg); }
 .contact-inner { padding-block: clamp(72px, 13vh, 150px) clamp(48px, 8vh, 90px); }
 .contact .section-label { color: var(--accent); }
 .contact-title {
